@@ -1,0 +1,83 @@
+\documentclass{article}
+\pagestyle{empty}
+\usepackage[paper=a3paper, landscape, margin=1cm]{geometry}
+
+\setlength\parskip{0pt}
+\setlength\parindent{0pt}
+
+\usepackage{fontspec}
+
+\usepackage{graphicx}
+
+\newcommand{\textfill}[1]{\resizebox{\linewidth}{!}{#1}}
+
+\usepackage{needspace}
+\newcommand{\flagline}{\vspace{-1.0cm}\includegraphics[angle=90, width=1\textwidth, height=1cm]{flag.eps}\hfill~\vspace{-2cm}}
+
+%\newcommand{\flagline}{{\vspace{-1ex}~\hfill\includegraphics[angle=90, width=0.5\textwidth, height=0.05cm]{flag.eps}\hfill~}\needspace{4\baselineskip}}
+
+\begin{document}
+
+\begin{center}
+\fontspec{Fontin Sans Bold}
+\fontsize{100}{100}
+\selectfont
+
+\textfill{\uppercase{internacia}}\\
+\textfill{\uppercase{solidareco}}\\
+\flagline\\
+\textfill{\uppercase{internacia}}\\
+\textfill{\uppercase{bojkoto}}
+\end{center}
+
+%\vfill
+%
+%\fontsize{80}{80}
+%\selectfont
+%
+%\begin{tabular}{c}
+%	Berlin\\
+%	1936
+%\end{tabular}
+%\dotfill
+%\begin{tabular}{c}
+%	Москва\\
+%	2013
+%\end{tabular}
+%\begin{tabular}{c}
+%	Сочи\\
+%	2014
+%\end{tabular}
+
+\newpage
+
+
+%\newcommand{\rainbowicon}[1]{\hspace{1cm} & $\vcenter{\hbox{\includegraphics[height=4cm]{#1}}}$}
+\newcommand{\rainbowicon}[1]{\hspace{1cm} & \includegraphics[height=4cm]{#1}}
+
+\begin{center}
+%\fontspec{Droid Serif Bold}
+\fontspec{Pressuru}
+
+\fontsize{125}{150}
+\selectfont
+
+~
+
+\vfill
+
+\renewcommand{\arraystretch}{1.25}
+\begin{tabular}{lc}
+	Свобода \rainbowicon{liberty.png}\\
+	Равенство \rainbowicon{equality.pdf}\\
+	Солидарность \rainbowicon{solidarity.pdf}\\
+	Любовь \rainbowicon{love.pdf}
+\end{tabular}
+%братство ***
+
+\vfill
+
+~
+
+\end{center}
+\end{document}
